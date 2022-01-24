@@ -10,6 +10,7 @@ import {
   useSelector,
 } from 'react-redux';
 
+import ErrorMessage from '../../common/ErrorMessage/ErrorMessage';
 import Loading from '../../common/Loading/Loading';
 import Post from '../../common/Post/Post';
 import {
@@ -28,7 +29,7 @@ const Feed = () => {
         if (posts.randomPostsError) {
             return (
                 <div className="random-posts-error">
-                    {posts.randomPostsError.message}
+                    <ErrorMessage message={posts.randomPostsError.message} />
                 </div>
             )
         }
@@ -43,18 +44,29 @@ const Feed = () => {
 
     const [hasMore] = useState(true);
     const [page, loaderRef] = useInfiniteScroll(hasMore, posts.isRandomPostsLoading);
-
     useEffect(() => {
         const cache = getStorage('randomPosts');
         if (cache) {
             dispatch({ type: FETCH_RANDOM_POSTS_FROM_CACHE, payload: cache });
             return;
-        }  }, []);
+        }
+    }, []);
 
 
-        useEffect(() => {
+    useEffect(() => {
         if (posts.isRandomPostsLoading) return;
-        if (page >= 1) dispatch(fetchRandomPosts());
+        if (posts.randomPosts.length === 0) {
+            const cache = getStorage('randomPosts');
+            if (cache) {
+                dispatch({ type: FETCH_RANDOM_POSTS_FROM_CACHE, payload: cache });
+                return;
+            }
+            else {
+                dispatch(fetchRandomPosts());
+                return;
+            }
+        }
+        if(page > 2) dispatch(fetchRandomPosts());
     }, [page])
 
     return (
