@@ -49,7 +49,10 @@ const Feed = () => {
         if (cache) {
             dispatch({ type: FETCH_RANDOM_POSTS_FROM_CACHE, payload: cache });
             return;
-        }
+        }  }, []);
+
+
+        useEffect(() => {
         if (posts.isRandomPostsLoading) return;
         if (page >= 1) dispatch(fetchRandomPosts());
     }, [page])
