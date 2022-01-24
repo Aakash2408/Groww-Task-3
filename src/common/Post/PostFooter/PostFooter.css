@@ -1,0 +1,17 @@
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+
+.post-footer-details {
+    font-weight: 700;
+}
+
+.caption {
+    font-weight: 400;
+} 
+
+.likes {
+    font-weight: 700;
+}
