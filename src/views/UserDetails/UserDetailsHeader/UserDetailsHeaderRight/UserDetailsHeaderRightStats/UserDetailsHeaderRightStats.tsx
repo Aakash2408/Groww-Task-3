@@ -9,17 +9,19 @@ interface MyProps {
 }
 function UserDetailsHeaderRightStats(props: MyProps) {
     return (
-        <div className="user-details-header-rights-stats">
-            <div className="stat">
-                <span className="num">{props.photos}</span><span className="datatype"> Photos</span>
+        
+        <div className="ggProfileUserStats9305 flexbox">
+            <div className="ggProfileUserStItem9305 flexbox">
+                <b>{props.photos}</b><span> Photos</span>
             </div>
-            <div className="stat">
-                <span className="num">{props.followers}</span><span className="datatype"> Followers</span>
+            <div className="ggProfileUserStItem9305 flexbox">
+                <b>{props.followers}</b><span> Followers</span>
             </div>
-            <div className="stat">
-                <span className="num">{props.following}</span><span className="datatype"> Following</span>
+            <div className="ggProfileUserStItem9305 flexbox">
+                <b>{props.following}</b><span> Following</span>
             </div>
         </div>
+        
     )
 }
 

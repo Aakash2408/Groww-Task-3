@@ -1,3 +1,5 @@
+@import url(../../styles/colors/_colors.css);
+@import url(../../styles/typography/typography.css);
 .header {
     height: 55px;
     width: 100vw;
@@ -5,11 +7,18 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
-    top: 0px;
+    color: var(--primary);
+    background-color: var(--primary);
+    bottom: 20px;
     z-index: 2;
 }
-
+.header h1{
+    color: var(--secondary);
+    font-family: InstagramFont !important;
+}
+.title{
+    color: var(--primary);
+}
 .header .title {
     background-image: url('./images/title.png');
     background-repeat: no-repeat;
@@ -20,8 +29,57 @@
 
 .header .reload {
     background-image: url('./images/reload.png');
+    color: var(--secondary);
     background-repeat: no-repeat;
     background-size: auto 25px;
     height: 25px;
     width: 30px;
+}
+
+
+.ggHeader9305{
+    height: 54px;
+    width: 100%;
+    background-color: var(--primary);
+    top: 0;
+    border-bottom: 1px solid var(--grey);
+    position: fixed;
+    z-index: 99;
+    box-sizing: border-box;
+}
+.ggHeader9305 .ggHeaderInner9305{
+    width: 892px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.ggHeader9305 a{
+    text-decoration: none;
+}
+.ggHeader9305 a h1{
+    color: var(--primary);
+    font-family: InstagramFont !important;
+    font-size: 26px;
+}
+.ggHeader9305 .ggHeaderInner9305 img{
+    cursor: pointer;
+}
+@media screen and (max-width:940px){
+    .ggHeader9305{
+        padding:0 30px;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:790px) {
+    .ggHeader9305{
+        width: fit-content;
+        padding: 0;
+    }
+    .ggHeader9305 .ggHeaderInner9305{
+        width: 100vw;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
 }

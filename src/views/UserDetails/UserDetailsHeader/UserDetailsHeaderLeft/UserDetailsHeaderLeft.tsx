@@ -4,7 +4,7 @@ import UserProfilePic from '../../../../common/UserProfilePic/UserProfilePic';
 
 function UserDetailsHeaderLeft(props: { profileImage: string }) {
     return (
-        <div className="user-details-header-left">
+        <div className="ggProfileAvatar" >
             <UserProfilePic profileImage={props.profileImage} size='medium'/>
         </div>
     )

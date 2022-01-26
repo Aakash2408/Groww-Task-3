@@ -10,10 +10,12 @@ import UserDetailsHeaderRight
 
 const UserDetailsHeader = (props: {userProfile: UnsplashUserProfile}) => {
     return (
-        <div className="user-details-header">
+        
+          <div className="ggProfileHeader9305 flexbox">
             <UserDetailsHeaderLeft profileImage={props.userProfile.profile_image.large}/>
             <UserDetailsHeaderRight userProfile={props.userProfile}/> 
         </div>
+        
     );
 }
 

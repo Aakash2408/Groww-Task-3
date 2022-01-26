@@ -9,3 +9,27 @@
 .user-details-header-rights-stats .num {
     font-weight: 700;
 }
+.ggProfileUserStats9305{
+    margin-top: 16px;
+    font-size: 18px;
+}
+@media screen and (max-width: 580px) {
+    .ggProfileUserStats9305{
+        margin-top:8px;
+        /* margin-left:20px; */
+
+    }
+    .ggProfileUserStItem9305 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin: 0 10px;
+    }
+    .ggProfileHeader9305 .ggProfileUserInfo9305 .ggProfileUserStats9305 .ggProfileUserStItem9305 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}

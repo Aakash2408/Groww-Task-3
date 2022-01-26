@@ -6,7 +6,41 @@
     flex-direction: column;
     align-content: center;
 }
-
+.ggProfileUsername9305{
+    font-size: 30px;
+    font-weight: 300;
+}
+.ggProfile9305 .ggProfileHeader9305 .ggProfileUserInfo9305{
+    flex-direction: column;
+}
+.ggProfileUserInfo9305
+{
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: 0 10px;
+    font-size: 15px;
+    margin-right: 0;
+    margin-top: 35px;
+    font-size: 15px;
+    /* text-align: center; */
+}
+/* .ggProfileUserStats9305{
+    margin-top: 16px;
+    font-size: 18px;
+    margin: 0 20px 0 0px;
+} */
+.ggProfileName9305{
+    margin-top: 24px;
+    font-size: 18px;
+}
+.ggProfileBio9305{
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 8px;
+    width:100%;
+    position: relative; 
+    white-space: wrap;
+}
 .user-details-header-right .username {
     margin-bottom: 20px;
     font-weight: 300;
@@ -37,3 +71,31 @@
         width: auto;
     }
 }
+
+@media screen and (max-width: 590px) {
+    .ggProfileUserInfo9305 {
+        align-items: center;
+    }
+    
+    .ggProfileUsername9305{
+        font-size: 25px;
+        margin-top:-44px;
+        margin-bottom:34px;
+    }
+    .ggProfileName9305{
+        margin-top: 12px;
+        font-size: 15px;
+
+        text-align: center;
+        
+    }
+    .ggProfileBio9305{
+        margin-top: 12px;
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+
+
+

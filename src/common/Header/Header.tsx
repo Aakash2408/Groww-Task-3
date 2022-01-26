@@ -49,10 +49,12 @@ function Header() {
     }
     return (
         <div className="header">
-            <span className="title"></span>
-            <span className="reload" onClick={handleReload}></span>
+{/* <div className="ggHeaderInner9305 flexbox"> */}
+             <Link to="/"><h1>Growwgram</h1></Link>
+            {/* <span className="reload" onClick={handleReload}></span> */}
             <img onClick={changeTheme} src={src} alt="theme" />
         </div>
+        // </div>
     )
 }
 

@@ -1,7 +1,86 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.3em;
+@import url(./styles/colors/_colors.css);
+/* @import url(./styles/typography/typography.css); */
+
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
+html.themetransition,
+html.themetransition *,
+html.themetransition *::before,
+html.themetransition *::after {
+  transition: all 100ms !important;
+  transition-delay: 0 !important;
+}
+html{
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+html::-webkit-scrollbar-track {
+  background: var(--primary) !;
+}
+
+
+html::-webkit-scrollbar-thumb {
+  background: var(--textGrey);
+  border-radius: 20px;
+  border: 2px solid var(--primary)
+}
+
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.App{
+  background-color:var(--background);
+  align-items: center;
+}
+
+.flexbox{
+  display: flex;
+}
+
+.App .ggBackToTop9305{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background-color: var(--grey);
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 30px var(--grey);
+}
+.App .showBackToTop{
+  visibility: visible;
+}
+
+.App .ggBackToTop9305 .feather{
+  stroke: var(--secondary)
+}
+
+@media screen and (max-width:450px) {
+  .App .ggBackToTop9305 {
+    height: 50px;
+    width: 50px;
+    right: 30px;
+    bottom: 30px;
+  }
+  .App .ggBackToTop9305 .feather{
+    height: 40px;
+    width: 40px;
+  }
+}
+
+
+
