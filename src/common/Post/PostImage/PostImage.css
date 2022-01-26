@@ -2,3 +2,9 @@
     width: 100%;
     height: auto;
 }
+.ggPost9305 .ggPostImage9305{
+    object-fit: cover;
+    width: 100%;
+    max-height: 700px;
+    object-position: center;
+}

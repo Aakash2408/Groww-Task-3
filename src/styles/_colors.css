@@ -1,0 +1,20 @@
+html{
+  --background:#fafafa;
+  --grey:#dbdbdb;
+  --primary:#ffffff;
+  --textGrey:#a3a3a3;
+  --secondary:#000000;
+  --overlay:rgba(0, 0, 0, 0.5);
+  --bgShimmer: linear-gradient(to right, #eff1f3 10%, #eeeeee 50%, #eff1f3 36%);
+  --shadowCover: rgba(163,163,163,0.25)
+}
+html[data-theme='dark'] {
+  --background:#0e0e0e;
+  --grey:#272727;
+  --primary:#080808;
+  --textGrey:#757575;
+  --secondary:#ffffff;
+  --overlay:rgba(0, 0, 0, 0.5);
+  --bgShimmer: linear-gradient(to right, #1f1e1e 10%, #1b1b1b 50%, #1d1d1d 36%);
+  --shadowCover: rgba(117,117,117,0.25)
+}

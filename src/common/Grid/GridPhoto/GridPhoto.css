@@ -5,6 +5,23 @@
     margin-bottom: 25px;
     margin-top: 25px;
 }
+.ggProfileUserPhoto9305 .ggUserPhotoOverlay9305 span{
+    color: #fff;
+    font-size:20px;
+    margin-left: 8px;
+}
+.ggUserPhotoLikes9305{
+    stroke: #fff;
+    fill:#fff;
+    height: 22px;
+    width: 24px;
+    margin-bottom: -4px;
+    padding-top: 2px;
+}
+
+.ggProfileUserPhoto9305 .ggShowOverlay9305{
+    visibility: visible;
+}
 
 .grid-photo img{
     width: 300px;

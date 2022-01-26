@@ -2,8 +2,8 @@ import './PostImage.css';
 
 const PostImage = (props: { photo: string }) => {
     return (
-        <div className="post-image">
-            <img alt="desc" src={props.photo}/>
+        <div  >
+            <img className="ggPostImage9305" alt="desc" src={props.photo}/>
         </div>
     );
 }

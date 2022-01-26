@@ -1,4 +1,4 @@
-.post-footer {
+/* .post-footer {
     font-weight: 400;
     display: flex;
     margin: 10px 10px;
@@ -19,4 +19,127 @@
 
 .likes {
     font-weight: 700;
+} */
+.ggPost9305{
+    height: fit-content;
+    width: 600px;
+    background-color: var(--primary);
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    margin-top: 30px;
+    box-sizing: content-box;
+    color:var(--secondary)
+    /* overflow: hidden; */
 }
+.ggPost9305 .ggPostHeader9305{
+    padding: 16px;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid var(--grey);
+}
+/* .ggPost9305 .ggPostHeader9305 .ggAvatar9305{
+    height: 40px;
+    width: 40px;
+    margin-right: 16px;
+} */
+
+
+.ggPost9305 .ggPostFooter9305{
+    flex-direction: column;
+    padding: 16px;
+    margin-top: 0;
+}
+.ggPost9305 .ggPostFooter9305 .ggIcons9305{
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.ggPost9305 .ggPostFooter9305 .ggIcons9305 .ggIconItem9305{
+    margin-right: 12px;
+    cursor: not-allowed;
+    transition: none !important;
+}
+
+.ggPost9305 .ggPostFooter9305 .ggIcons9305 .heart{
+    fill:var(--primary);
+    stroke: var(--secondary);
+    cursor: pointer;
+}
+.ggPost9305 .ggPostFooter9305 .ggIcons9305 .ggLikePost9305{
+    fill:red;
+    stroke: red;
+}
+.ggPost9305 .ggPostFooter9305 .ggIcons9305 .heart:active{
+    animation: animateHeart 0.3s ease;
+}
+
+.ggPost9305 .ggPostFooter9305 .ggPostLikes9305{
+    font-size: 17px;
+}
+
+
+.ggPost9305 .ggPostFooter9305 .ggPostCaption9305{
+    font-weight: 300;
+    font-size: 16px;
+    margin: 8px 0;
+    text-overflow: clip;
+}
+.ggPost9305 .ggPostFooter9305 .ggPostCaption9305 a,
+.ggPost9305 .ggPostHeader9305 a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 500;
+}
+.ggPost9305 .ggPostFooter9305 .ggPostCaption9305 .ggPostShowMore9305{
+    font-weight: 500;
+    color: var(--textGrey);
+    cursor: pointer;
+    margin-left: 8px;
+    visibility: hidden;
+}
+.ggPost9305 .ggPostFooter9305 .ggPostCaption9305 .ggPostSMVisible9305{
+    visibility: visible;
+}
+
+
+.ggPost9305 .ggPostFooter9305 .ggPostCaption9305 a:hover,
+.ggPost9305 .ggPostHeader9305 a:hover{
+    text-decoration: underline;
+}
+.ggPost9305 .ggPostFooter9305 .ggPostTimeStamp9305{
+    font-size: 14px;
+    color: var(--textGrey);
+    font-weight: 400;
+}
+.ggPost9305 .ggPostHeader9305 .ggProfileDesc9305{
+    margin: 0;
+}
+
+@keyframes animateHeart {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width:950px) {
+    .ggPost9305{
+        width: 400px;
+    }
+    .ggPost9305 .ggPostImage9305{
+        height: 550px;
+    }
+}
+
+@media screen and (max-width:445px) {
+    .ggPost9305{
+        width: calc(100vw - 2px);
+    }
+    .ggPost9305 .ggPostImage9305{
+        height: 400px;
+    }
+}
+
