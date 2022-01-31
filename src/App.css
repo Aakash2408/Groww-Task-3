@@ -18,9 +18,9 @@ html.themetransition *::after {
 html{
   scroll-behavior: smooth;
 }
-html::-webkit-scrollbar {
+/* html::-webkit-scrollbar {
   width: 10px;
-}
+} */
 
 
 html::-webkit-scrollbar-track {
@@ -48,6 +48,21 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .App .ggBackToTop9305{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background-color: var(--grey);
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  cursor: pointer;
+  border-color: var(--primary);
+  box-shadow: 0 0 30px var(--grey);
+}
+.ggBackToTop9305{
   height: 70px;
   width: 70px;
   border-radius: 50%;
@@ -59,18 +74,25 @@ html::-webkit-scrollbar-thumb:hover {
   align-items: center;
   visibility: hidden;
   cursor: pointer;
-  box-shadow: 0 0 30px var(--grey);
+ 
+  box-shadow: 0 0 30px #ffffff;
 }
 .App .showBackToTop{
   visibility: visible;
 }
-
-.App .ggBackToTop9305 .feather{
-  stroke: var(--secondary)
+.showBackToTop{
+  visibility: visible;
 }
 
+.App .ggBackToTop9305 .feather{
+  stroke: var(--secondary) !important;
+}
+
+.ggBackToTop9305{
+  stroke: var(--secondary) !important;
+}
 @media screen and (max-width:450px) {
-  .App .ggBackToTop9305 {
+  .ggBackToTop9305 {
     height: 50px;
     width: 50px;
     right: 30px;

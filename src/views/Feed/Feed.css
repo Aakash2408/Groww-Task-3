@@ -1,6 +1,7 @@
 @import url(../../styles/colors/_colors.css);
 .feed {
     display: flex;
+    padding:50px;
     flex-direction: column;
     align-items: center;
     background: var(--primary);

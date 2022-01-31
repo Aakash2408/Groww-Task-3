@@ -11,7 +11,7 @@ export interface RootState {
 }
 export interface RandomPost {
     isRandomPostsLoading: boolean,
-    randomPostsError: UnsplashError | null,
+    randomPostsError: UnsplashError|null,
     randomPosts: UnsplashPhoto[]
 }
 export interface FetchRandomPostsAction {

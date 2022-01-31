@@ -11,7 +11,7 @@ const PostHeader = (props: {username: string, location: string, profileImage: st
         <div className="post-header">
             <UserProfilePic profileImage={props.profileImage} size='small' />
             <div className="user-name">
-                <Link to={`/userdetails/${props.username}`} >{props.username}</Link>
+                <Link to={`/user-details/${props.username}`} >{props.username}</Link>
                 <p className="location">{props.location}</p>
             </div>
         </div>

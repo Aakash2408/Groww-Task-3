@@ -1,4 +1,4 @@
-.user-details-header {
+/* .user-details-header {
     width: 60%;
     display: flex;
     flex-wrap: wrap;
@@ -9,13 +9,14 @@
     .user-details-header {
         width: 90%;
     }
-}
+} */
 
 .ggProfileHeader9305{
     flex-direction: row;
     justify-content: flex-start;
     border-bottom: 1px solid vaR(--grey);
     padding-bottom: 50px;
+    max-width: 900px;
 }
 @media screen and (max-width: 590px) {
      .ggProfileHeader9305{

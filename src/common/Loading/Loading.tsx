@@ -3,9 +3,10 @@ import './Loading.css';
 import { PulseLoader } from 'react-spinners';
 
 const Loading = () => {
-    const override: string = "margin: 400pxsdlnvfsdv";
+    const override: string = "margin: 400";
 
     return (
+        
         <div className="loading">
             <div className="loading-container">
                 <PulseLoader color={'lightgray'} css={override} size={15} />

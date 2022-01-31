@@ -1,18 +1,35 @@
+@import url(../../styles/colors/_colors.css);
 .error-message {
+    margin-top: auto;
+    text-align: center;
     display: flex;
+    height:90vh;
+    /* line-height: 800px; */
     justify-content: center;
     align-items: center;
+}
+.backtoHome{
+    color:var(--secondary) !important;
+    text-decoration: underline !important;
+    padding-top:35% !important;
 }
 
 .error-message .error-container {
     margin: 10px;
-    border: 2px #ec2e2e solid;
+    /* height: 100%; */
+    /* border: 2px #ec2e2e solid; */
     border-radius: 10px;
-    background-color: #cf6b6b9a;
+    background-color: var(--primary);
     padding: 12px;
 }
 
 .error-message .error-container .message {
     font-size: 1.5rem;
-    color: #333333;
+    color: var(--secondary);
+}
+
+@media screen and (max-width:590px) {
+   .message{
+       font-size:0.8rem;
+   }
 }

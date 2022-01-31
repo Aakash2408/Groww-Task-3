@@ -27,3 +27,9 @@ export default function useInfiniteScroll(hasMore: boolean, loading: boolean): [
   }, [ hasMore ] );
   return [page, loaderRef];
 }
+
+// export const randomhook=()=>{
+//   return ["hello",()=>{
+
+//   }]
+// };

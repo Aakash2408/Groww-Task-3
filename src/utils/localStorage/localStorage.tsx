@@ -2,7 +2,7 @@ export const setStorage = (key: string, value: any) => {
     const now = new Date();
     const item = {
         value: value,
-        expiry: now.getTime() + 300000,
+        expiry: now.getTime() + 300000,   
     }
     localStorage.setItem(key, JSON.stringify(item));
 }

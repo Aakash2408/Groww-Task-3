@@ -18,8 +18,7 @@ import reducers from './store/reducers';
 // const store = createStore(reducers, applyMiddleware(thunk, reduxPackMiddleware));
 
 const store = createStore(reducers, composeWithDevTools(
-  applyMiddleware(thunk, reduxPackMiddleware),
-  // other store enhancers if any
+  applyMiddleware(thunk, reduxPackMiddleware), 
 ));
 
 ReactDOM.render(

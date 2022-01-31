@@ -10,7 +10,7 @@ html{
 }
 html[data-theme='dark'] {
   --background:#0e0e0e;
-  --grey:#272727;
+  --grey:#3f3e3e;
   --primary:#080808;
   --textGrey:#757575;
   --secondary:#ffffff;
