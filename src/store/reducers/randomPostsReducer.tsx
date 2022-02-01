@@ -1,6 +1,6 @@
 import { AxiosResponse } from 'axios';
 import { handle } from 'redux-pack';
-
+import { Photo } from '../../utils/helpers/types';
 import { setStorage } from '../../utils/localStorage/localStorage';
 import {
   FetchRandomPostsAction,
@@ -19,7 +19,16 @@ const initialState: RandomPost = {
     randomPostsError: null,
     randomPosts: []
 }
-
+const postsReducer = (state: Array<Photo> = [], action: { type: string, payload: Array<object>}) =>{
+    switch (action.type) {
+        case 'FETCH_POSTS':
+            const newPosts = action.payload
+            console.log([...state, ...newPosts], "reducer");
+            return [...state, ...newPosts];
+        default:
+            return state
+    }
+}
 const randomPostsReducer = (state: RandomPost = initialState, action: FetchRandomPostsAction) => {
     switch (action.type) {
         case FETCH_RANDOM_POSTS:

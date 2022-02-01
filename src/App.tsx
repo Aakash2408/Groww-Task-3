@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import { useState } from 'react';
 import Header from './common/Header/Header';
-import Feed from './views/Feed/Feed';
+import Feed from './views/Feed/index';
 import UserDetails from './views/UserDetails/UserDetails';
 import { ReactComponent as Chevron } from '../src/icons/chevron-up.svg';
 // import { randomhook } from './utils/hooks/useInfiniteScroll';

@@ -55,6 +55,12 @@
     color: var(--primary);
     font-family: InstagramFont !important;
     font-size: 26px;
+    text-decoration: none !important;
+}
+a h1:hover{
+    
+    text-decoration: none !important;
+    
 }
 .ggHeader9305 .ggHeaderInner9305 img{
     cursor: pointer;

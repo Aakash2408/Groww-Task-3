@@ -46,7 +46,9 @@ html::-webkit-scrollbar-thumb:hover {
 .flexbox{
   display: flex;
 }
-
+.feather {
+  stroke: var(--secondary);
+}
 .App .ggBackToTop9305{
   height: 60px;
   width: 60px;

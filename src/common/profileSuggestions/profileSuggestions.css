@@ -1,0 +1,54 @@
+.ggProfileSuggestions9305{
+    position: sticky;
+    margin-top:40px;
+    flex-direction: column;
+    width: 290px;
+    height: 100vh;
+    margin-left: 40px;
+    top: 100px;
+    color:var(--secondary);
+}
+
+.ggProfileSuggestions9305 h3{
+    font-size: 17px;
+    font-weight: 400;
+}
+.ggProfileSuggestions9305 .ggProfileSuggInner9305{
+    flex-direction: column;
+}
+
+@media screen and (max-width:790px) {
+    .ggProfileSuggestions9305{
+        position: relative;
+        height: fit-content;
+        top:0;
+        padding: 0 30px;
+        margin: 0;
+        width: 100%;
+    }
+    .ggProfileSuggestions9305 .ggProfileSuggInner9305 .ggProfileDesc9305:first-of-type{
+        margin-left: 0;
+    }
+    .ggProfileSuggestions9305 .ggProfileSuggInner9305 .ggProfileDesc9305:last-of-type{
+        margin-right: 0;
+    }
+    .ggProfileSuggestions9305 .ggProfileSuggInner9305{
+        flex-direction: row;
+        overflow-x: scroll;
+        background-image: 
+	   
+    /* Shadows */ 
+    linear-gradient(to right, var(--background), var(--background)),
+    linear-gradient(to right, var(--background), var(--background)),
+  
+/* Shadow covers */ 
+    linear-gradient(to right, var(--shadowCover), rgba(255,255,255,0)),
+    linear-gradient(to left, var(--shadowCover), rgba(255,255,255,0));   
+
+  background-position: left center, right center, left center, right center;
+	background-repeat: no-repeat;
+	background-color: var(--background);
+	background-size: 50px 100%, 50px 100%, 40px 100%, 30px 100%;
+    background-attachment: local, local, scroll, scroll;
+    }
+}
